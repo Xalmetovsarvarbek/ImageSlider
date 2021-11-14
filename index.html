@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <style>
+        body{
+            display: block;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            
+        }
+        #div{
+            background: pink;
+            width:60vw;
+            height: 60vh;
+            margin:0 auto;
+            margin-top: 20vh;
+        }
+        #rasmi{
+            display: flex;
+            position: absolute;
+            margin-left:12vw;
+            margin-top:-1vh;
+        }
+
+        input[type="radio"]{
+            width:2vw;
+            height:2vh;
+        }
+        input[type="radio"]:checked,input[type="radio"]:hover{
+            cursor: pointer;
+        }
+        .rang{
+            background:red;
+        }
+        .rasm{
+            width:50vw;
+            height: 50vh;
+            transform:5s;
+            margin-left:5vw;
+            margin-top: 5vh;
+            clip: rect(0px,60px,200px,0px);
+            z-index: 1;
+        }
+        
+        #button1{
+    width: 5vw;
+    height: 50vh;
+    position: absolute;
+    margin:5vh 0 0 5vw;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    z-index: 2;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+        #button2{
+            width: 5vw;
+            height: 50vh;
+            position: absolute;
+            margin:5vh 0 0 -5vw;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            z-index: 2;
+            outline: none;
+            border: none;
+            background: transparent;
+        }
+        #button1:hover,#button2:hover{
+            background: yellow;
+            opacity: 0.1;
+            cursor: pointer;
+        }
+    </style>
+    <div id="div">
+<button id="button1"><</button>
+<img src="img/1.jpg" alt="" id="img">
+<button id="button2">></button>
+<div id="rasmi"> 
+    <input type="radio" name="tanlov" onclick=bil(1)>
+    <input type="radio" name="tanlov" onclick=bil(2)>
+    <input type="radio" name="tanlov" onclick=bil(3)>
+    <input type="radio" name="tanlov" onclick=bil(4)>
+    <input type="radio" name="tanlov" onclick=bil(5)>
+    <input type="radio" name="tanlov" onclick=bil(6)>
+    <input type="radio" name="tanlov" onclick=bil(7)>
+    <input type="radio" name="tanlov" onclick=bil(8)>
+    <input type="radio" name="tanlov" onclick=bil(9)>
+</div>    
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
